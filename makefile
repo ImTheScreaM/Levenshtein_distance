@@ -13,7 +13,7 @@ app:
 	mkdir -p $(OUT_FILE)
 	$(GCC) $(ALL_SRC) $(CFLAGS) -o $(OUT_FILE)/$(OUT_NAME)
 
-start:
+start: app
 	./$(OUT_FILE)/$(OUT_NAME)
 
 docs:
